@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <table>
+                <tr>
+                    <td><label>First name</label></td>
+                    <td><input type="text" name="FN" placeholder="Ex:Saquib" size="20" minlength="1" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Surname</label></td>
+                    <td><input type="text" name="SN" placeholder="Ex:Mahammed" size="20" minlength="1" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number</label></td>
+                    <td><input type="tel" name="mob" placeholder="Ex:12345-67890" size="20" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><input type="email" name="mail" placeholder="mdsaquib@gmail.com" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="pwd" placeholder="min 8 characters" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td>
+                    <td><input type="password" name="cpwd" placeholder="min 8 characters" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label>DOB</label></td>
+                    <td><input type="date" name="dob" size="20"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="M">Male
+                        <input type="radio" name="gender" value="F">Female
+                        <input type="radio" name="gender" value="O">Custom
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Select Country</label></td>
+                    <td>
+                        <select name="country">
+                            <option value="INDIA">INDIA</option>
+                            <option value="UAE">UAE</option>
+                            <option value="RUSSIA">RUSSIA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Upload File</label></td>
+                    <td><input type="file" name="pic"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>        
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Details:</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>Select Course</label>
+                        <select name="course">
+                            <option value="JFS">JAVA FULL STACK</option>
+                            <option value="PFS">PYTHON FULL STACK</option>
+                            <option value="AIML">AI-ML</option>
+                            <option value="DS">DATA SCIENCE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Delivery Mode</label>
+                        <input type="checkbox" name="mode1" value="ON">ONLINE
+                        <input type="checkbox" name="mode2" value="OFF">OFFLINE
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Comments</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea rows="4" cols="40"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <a href="thank.html"><img src="https://www.seekpng.com/png/detail/215-2152983_blue-submit-button-png-red-dwarf-what-is.png" height="60px" width="150px"></a>
+    </form>
+</body>
+</html>
